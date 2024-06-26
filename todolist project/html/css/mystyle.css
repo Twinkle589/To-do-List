@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    background:url('bg.jpg') no-repeat center center fixed; /* Replace 'path/to/your/image.jpg' with the path to your image file */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 40%;
+    min-width: 350px;
+    background-color: rgba(197, 225, 230, 0.8);
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#taskinfo{
+    width: 75%;
+    height: 35px;
+    border: 2px solid rgba(197, 225, 230, 0.8);;
+    border-radius: 6px;
+    color: #111115;
+    font-weight: 400;
+    padding-left: 5px;
+}
+#taskinfo:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#add{
+    width: 20%;
+    height: 35px;
+    border-radius:5px;
+    font-weight: 500;
+    background-color: #7C4DFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#tasklist{
+    margin-bottom: 9px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.task-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding-left: 5px;
+    background-color: #c5e1e6;
+    outline: none;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c5e1e6;
+    height: 45px;
+    margin-bottom: 9px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #939697;
+}
+
+.favorite {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: #f93684; /* Change color to indicate favorited state */
+}
+.favorite.favorited {
+    color: #f93684; /* Red color for favorited state */
+}
+
+
+
+
+.edit,.del{
+    color:#f93684;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 25px;
+    
+}
